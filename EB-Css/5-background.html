@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu1{
+            background-color: lightblue;
+            width: 300px;
+            height:  300px;
+            color: snow;
+            text-align: center; /*metni hızalama turu */
+            animation: hareket 3s infinite alternate;
+            background-image: url(images.png);
+            background-size: cover; /*resmi kaplar*/
+            background-position: center; /*resmi ortalar*/
+            border-radius: 50px;
+        }
+        @keyframes hareket{
+        from{
+            transform: translateY(10px);
+            background-color: lightblues;
+        }
+        to{
+            transform: translateX(200px);
+            background-color: lightcoral;
+        }
+    }
+    </style>
+  
+</head>
+<body>
+    <div class="kutu1">
+        <h1>Lorem, ipsum.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sunt?</p>
+        <h2>İkikez Düşün Birkez kodla</h2>
+    </div>
+</body>
+</html>

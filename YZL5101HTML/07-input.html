@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 50%;
+            margin: auto; /*sağ sol bosluklarını eşitler*/
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Başvuru Formu</h1>
+    <form>
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <table>
+                <tr>
+                    <td>Adi:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Soyadi:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Doğum Tarihi:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>Cinsiyet:</td>
+                    <td><input type="radio"name="gander"value="Erkek">E
+                    <input type="radio"name="gander"value="Kadin">K</td>
+                </tr>
+                <tr>
+                    <td>TC:</td>
+                    <td><input type="text"></td>
+                </tr>
+                
+            </table>
+        </fieldset>
+        <form>
+            <br><br>
+            <fieldset>
+                <legend>Kişisel Özellikler</legend>
+                <table>
+                   Medeni Hali: <label for=""></label>
+                    <select>
+                        <option >Evli</option>
+                        <option >Bekar</option>
+                    </select>
+                    <td>Sigara Kullanimi</td>
+                    <td>
+                        <input type="radio">Var
+                        <input type="radio">Yok
+                    </td>
+                    
+                </table>
+                Ehliyet:
+                <select style="margin-left: 30px;" >
+                    <option>A1</option>
+                    <option>A2</option>
+                    <option>B</option>
+                    <option>C</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                Sağlik Sorunu:
+                <td>
+                    <input type="radio">Var
+                    <input type="radio">Yok
+                </td>
+            </fieldset>
+        </form>
+        <br>
+    </form>
+    <form >
+        <fieldset>
+            <legend>Tanitim</legend>
+            <table>
+                CV <input type="file">
+                <br>
+                <br>
+                Kisa Açiklama 
+                <textarea></textarea>
+                
+            </table>
+        </fieldset>
+        <br>
+    </form>
+    <form>
+        <fieldset>
+            <legend>İş Bilgileri</legend>
+            İş Bilgisi-3 <br>
+            Şirket Adi: <input type="text" style="margin-left: 22px;"> <br>
+            İşe Giriş-Çikis <input type="date"> <br>
+            Tarihi: <input type="date" style="margin-left: 50px;"> <br> <br>
+
+            İş Bilgisi -2 <br>
+            Şirket Adi: <input type="text" style="margin-left: 22px;"> <br>
+            İşe Giriş-Çikis <input type="date"> <br>
+            Tarihi: <input type="date" style="margin-left: 50px;"> <br> <br>
+
+            İs Bilgisi-1 <br>
+            Şirket Adi: <input type="text" style="margin-left: 22px;"> <br>
+            İşe Giriş-Çikis <input type="date"> <br>
+            Tarihi: <input type="date" style="margin-left: 50px;"> <br> <br>
+            
+        </fieldset>
+    </form>
+</body>
+</html>

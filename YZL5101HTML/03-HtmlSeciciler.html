@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: blue;
+        }
+        div .paragraf1{ /*divin ıcındekı class'ı paragraf1 olanları secer*/
+            color: black;
+            background-color: pink;
+        }
+        div p{
+            color: red;
+        }
+        /*id=divsizp olan nesnesen sonra gelen tüm divleri seç ama aynı seviyede*/
+        #divsizp ~ div{
+            background-color: bisque;
+        }
+        /*id=divsizp olan dan sonra gelen */
+        #divsizp + div{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Burasi divin içi.
+        <p class="paragraf1">Paragraf1</p>
+        <p class="paragraf2">Paragraf2</p>
+        <p class="paragraf3">Paragraf3</p>
+    </div>
+    <p class="paragraf1">Deneme 1</p>
+    <p id="divsizp">Div siz p</p>
+    <div title="id si divsizp'den sonra gelen div bunun icindeki tüm elementleri seçer">
+        <p >Deneme</p>
+    </div>
+    <p class="paragraf4">Deneme 4</p>
+    <div>
+        <p>class id yok </p>
+    </div>
+    <p id="divsizp">Divsizp</p>
+
+    <div>Deneme salt - div</div>
+    
+    <div>Deneme - salt div</div>
+</body>
+</html>

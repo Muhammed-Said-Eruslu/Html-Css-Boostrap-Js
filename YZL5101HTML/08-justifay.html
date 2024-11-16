@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleforcss.css">
+    <style>
+        .container{
+            border: 7px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            justify-content: flex-end; /*sonundan baslar*/
+            justify-content: space-between; /*ilk ve son elementleri kapsayıcının en sağ ve en soluna yerleştirir ve diğerlerini eşit şekilde dağıtır*/
+            justify-content: space-around; /*her elemente sağ sol eşit boşluk verir bu yüzden nesneler arası bosluk daha fazla kenar bosluk daha az gozukur*/
+            justify-content: space-evenly; /*her element arası esıt bosluk dağitir*/
+            justify-content: center; /* ortalar */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+    </div>
+</body>
+</html>

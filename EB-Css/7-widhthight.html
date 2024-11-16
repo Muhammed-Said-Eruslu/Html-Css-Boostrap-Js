@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu{
+            background-color: red;
+            width: 50%; /*ilk basta deger ve sonra yüzde gelir*/
+            /*bulundugu tarayıcının her zaman yuzde 50lık kısmını kapla demek sabit bir genişlik veirir bu dıv bulunmus oldugu kontainer kadar yer kaplar*/
+            height: 100px;
+        }
+        .kutu2{
+
+            background-color: blue;
+            width: 50%; /*bulunmus oldugu dıv yuzde 50 sını kaplar*/
+            height: 50px;
+            color: #ffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu">
+        <div class="kutu2"><p>İç Div</p></div> <!-- shortcut div.kutu2 -->
+    </div>
+</body>
+</html>

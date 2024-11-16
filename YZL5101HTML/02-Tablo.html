@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table,tr,td,th{ /*internal css*/
+            border: 2px black solid; /*px verılır renk verılır ve cerveve verilir*/
+            color: red;
+        }
+        table{
+            width: 300px;
+            height: 300px;
+        }
+        td{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- table head -->
+    <table widht="30" cellspacing="5" cellpadding="20"> <!-- cellpadding iç kenar ile ıcerık arasındakı bosluğu temsil eder -->
+        <tr> <!-- Table row -->
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Yaş</th>
+        </tr>
+      </th> 
+      <tbody>
+        <tr>
+            <td>Muhammed Said</td>
+            <td>Eruslu</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>Abdullah</td>
+            <td>Eruslu</td>
+            <td>15</td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br><hr> <!-- br bosluk bırakır hr yatay cızgı verir -->
+    <table>
+        <tr>
+            <td rowspan="2">Telefon Numarasi</td> <!-- Satıralrı birleştirir -->
+            <td>878786</td>
+        </tr>
+        <tr>
+            <td>352532523</td>
+        </tr>
+        <br><br>
+        <table cellspan="5" cellpadding="10"> <!-- yatay olarak kac sutunu kapsıyacpını belirtir  -->
+            <tr>
+                <td colspan="2">Telefon Numarasi</td> <!-- Kolonları birleştirir -->
+            </tr>
+            <tr style="border: 2px red solid;">
+                <td style="font-family: 'Courier New', Courier, monospace;">2342344</td>
+                <td style="font-style: oblique;">23423423</td>
+            </tr>
+        </table>
+    </table>
+    <table>
+        <tr>
+            <td>Ürün Adi</td>
+            <td>Fiyat</td>
+            <td>Açiklama</td>
+        </tr>
+    </table>
+    <table cellpadding="200">
+        <tr>
+            <td>İsim</td>
+            <td>Soyisim</td>
+        </tr>
+    </table>
+    <table cellpadding="10" colspan="2">
+        <tr>
+            <td>Sa</td>
+        </tr>
+    </table>
+  </body>
+</html>

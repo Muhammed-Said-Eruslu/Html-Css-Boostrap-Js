@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  background-color: white;
+  font-family: Lato, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+nav {
+  width: 100%;
+  font-family: Montserrat;
+  background-color: #0066cc;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: fixed;
+}
+
+#logo-box {
+  float: left;
+  padding-top: 0.5rem;
+  display: block;
+}
+
+#logo-box .logo {
+  color: white;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+#nav-links .nav-link {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: block;
+  padding: 1.6rem;
+  letter-spacing: 0.1rem;
+  transition: color 1s;
+}
+
+#nav-links {
+  float: right;
+}
+
+#nav-links .nav-item {
+  float: left;
+  margin: 0.5rem;
+}
+
+#nav-links .nav-link:hover {
+  color: aquamarine;
+}
+
+/* Header Bölümü */
+
+header {
+  background-color: aquamarine;
+  height: 700px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.img-fluid {
+  max-width: 250px;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: Montserrat;
+}
+
+header h1 {
+  color: white;
+  font-size: 4rem;
+}
+
+header h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: Lato;
+  font-weight: 300;
+}
+
+hr {
+  color: white;
+}
+
+hr.star-light {
+  border-color: white;
+  border: none;
+  border-top: 0.5rem solid;
+  max-width: 25rem;
+  border-radius: 10px;
+  margin: 2.5rem auto;
+  overflow: visible;
+}
+
+hr.star-light::after{
+    content: "\2605";
+    color: white;
+    font-weight: 900;
+    font-size:3.2rem;
+    top:-27px;
+    position: relative;
+    background-color: aquamarine;
+    padding: 0 6px;
+}
+
+#solutions{
+    padding-top:10rem;
+    padding-bottom:10rem;
+    text-align: center;
+}
+
+#solutions h2{
+    color: grey;
+    font-size: 5rem;
+}
+
+.dark-line{
+    color: gray;
+    border:none;
+    border-top:0.5rem solid;
+    border-radius: 10px;
+    margin: 2.5rem auto;
+    max-width: 25rem;
+}
+
+.img-fluid-a{
+    max-width:100%;
+    height: auto;
+}
+
+.col{
+    width: 33.33%;
+    padding: 10px;
+    float: left;
+}

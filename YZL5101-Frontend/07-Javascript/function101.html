@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const myObject = {
+        firstname: "John",
+        lastname: "Doe",
+        fullname: () => myObject.firstname + " " + myObject.lastname,
+      };
+
+      myObject.firstname = "Alice";
+
+      // function () --> () =>
+    //   myObject.fullname = function(){
+    //     return myObject.firstname + " " + myObject.lastname;
+    //   }
+      
+
+      document.getElementById("demo").innerHTML = myObject.fullname();
+    </script>
+  </body>
+</html>

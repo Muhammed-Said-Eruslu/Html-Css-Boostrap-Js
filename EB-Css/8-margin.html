@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu {
+            background-color: lightblue;
+            width: 400px;
+            height: 250px;
+            margin-top: 60px;
+            margin-left: 40px;
+            margin-bottom: 100px;
+        }
+        p {
+            margin-left: 190px;
+        }
+        .p1 {
+            margin-top: px;
+            margin-right: 200px;
+    
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: slategray;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            animation: grow-shrink 1s infinite alternate; /* animasyonu düğmeye uyguluyoruz */
+            margin-bottom: 100px;
+        }
+
+        /* Hover etkisi */
+        .button:hover {
+            background-color: darkslategray;
+            color: white;
+        }
+
+        /* top: üst
+           bot: alt
+           left: sol
+           right: sağ */
+        
+        /* Animasyon stili */
+        @keyframes grow-shrink {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- etiket bosluk koyar en dıstaki nesne ıle bir nesne arasındakı bosluğu ayarlar -->
+     <!-- margin ıkı nense arası boslugu ayarlar -->
+      <!-- etiketin ıc boslugunu ayarlar -->
+    <p class="p1">Css Dersleri</p>
+    <h4>Muhammed Said Eruslu</h4>
+    <div class="kutu"></div>
+    <p>
+        <a href="https://www.youtube.com/watch?v=l_Ml95MB72E" 
+           class="button" target="_blank" rel="noopener noreferrer">
+           İletişim Sayfasi
+        </a>
+    </p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasyonlu Görsel</title>
+    <style>
+        /* Görüntüdeki animasyon */
+        .animated-image {
+            width: 300px; /* Görüntü boyutu */
+            animation: slideIn 5s infinite; /* 5 saniyelik bir animasyon tanımı */
+        }
+
+        /* slideIn animasyonu */
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%); /* Görüntü ekran dışında, solda başlar */
+            }
+            50% {
+                transform: translateX(50%); /* Görüntü sayfanın ortasında */
+            }
+            100% {
+                transform: translateX(0); /* Görüntü baştaki konumuna döner */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blue;">Muhammed Said Eruslu</h1>
+    <p>Bu bir paragraftir</p>
+    <div>
+        <!-- Görüntüye animasyon sınıfı ekleniyor -->
+        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_38.jpg" 
+             alt="Zed Character" 
+             class="animated-image">
+    </div>
+</body>
+</html>

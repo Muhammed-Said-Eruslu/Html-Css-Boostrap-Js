@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"></div>
+
+    <script>
+        async function getProduct() {
+            let url = "https://northwind.now.sh/api/products"
+
+            try{
+                let res = await fetch(url);
+
+                return await res.json();
+            }
+            catch(error)
+            {
+                console.log(error);
+            }
+        }
+        async function rendderProduct() {
+            let products = await getProduct();
+            let html = "";
+
+            products.forEach((products) =>{
+
+                let htmlSegment = `<div class="user"><h2>${products.id}${products.name}</h2><div>`
+
+
+                    html += htmlSegment;
+            });
+            let container = document.querySelector(".container");
+            container.innerHTML = html;
+        }
+        rendderProduct();
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validationForm(){
+            let fname = document.forms["myForm"]["fname"].value;
+            let fsurname = document.forms["myForm"]["fsurname"].value;
+
+            if(fname == "" || fsurname == "")
+                {
+                    alert("Name must be field out")
+                    return false;
+                }
+        }
+        /*post sunucuya verı gondermek ıcın*/
+        /**/
+    </script>
+</head>
+<body>
+    <h2>JS Validation </h2>
+
+    <form name="myForm" action="https://www.w3schools.com/action_page.php" method="get" onsubmit="return validationForm()">
+    
+        Name: <input type="text" name="fname">*<br>
+        Surname: <input type="text" name="fsurname">*<br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

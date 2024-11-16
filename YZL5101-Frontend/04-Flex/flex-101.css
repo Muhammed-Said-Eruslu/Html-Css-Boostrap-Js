@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr{
+    margin: 40px;
+}
+
+h2{
+    text-align: center;  
+}
+
+.container{
+    background-color: slategray;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction:row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+.box{
+    background-color: tomato;
+    color: snow;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.box-2{
+    background-color: slateblue;
+}
